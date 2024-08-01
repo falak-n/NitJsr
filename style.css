@@ -1,0 +1,310 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    
+   
+    font-family: "Poppins", sans-serif;
+  }
+  
+  header a {
+    text-decoration: none;
+  }
+  
+  header {
+      
+    padding: 0 20px;
+    background-color: #1d1f1d;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  
+  #brand {
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  #brand a {
+    color: #09c372;
+  }
+  
+  ul {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    overflow: hidden;
+    
+  }
+  li{
+    float: left;
+  }
+  
+  ul a {
+    color: white;
+  }
+  
+  ul li {
+    padding: 5px;
+    margin-left: 10px;
+  }
+  
+  ul li:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+  }
+  ul li a:hover{
+    color: #09c372;
+  }
+  #login,
+  #signup {
+    border-radius: 5px;
+    padding: 5px 8px;
+  }
+  
+  #login {
+    border: 1px solid #09c372;
+  }
+  
+  #signup {
+    border: 1px solid #09c372;
+  }
+  
+  #signup a {
+    color: #09c372;
+  }
+  
+  #login a {
+    color: #09c372;
+  }
+  
+  #hamburger-icon {
+    margin: auto 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  #hamburger-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+  
+  .open .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  
+  .open .bar2 {
+    opacity: 0;
+  }
+  
+  
+  
+  .open .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+  .open .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  
+  .mobile-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: calc(100vh - 50px);
+    width: 100%;
+  }
+  
+  .mobile-menu li {
+    margin-bottom: 10px;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    header nav {
+      display: none;
+    }
+  
+    #hamburger-icon {
+      display: block;
+    }
+  }
+  .firstS{
+    width: auto;
+    height: 100vh;
+    background-image: url("linkd/bg.jpg");
+    background-size: cover;
+  }
+  .content1{
+    width: auto;
+    position: absolute;
+    top: 40%;
+    left:5%;
+    font-size: 1.5rem;
+  }
+  .content1 p{
+    font-weight: bold;
+    
+  }
+  .net span{
+    color:white;
+  }
+  
+  
+  .first h1{
+    margin-top: 30px;
+    text-align: center;
+
+  }
+  
+  .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 4rem auto;
+    width: 90%;
+  }
+  .menu{
+    margin: 1.5rem 0 0;
+  }
+  .menu a{
+    font-size: 1.1rem;
+    text-decoration: none;
+    
+    margin: 0 1.5rem;
+    padding: 8px 22px;
+    background-color:#89738d;
+    color: black;
+  }
+  .box{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .store-item{
+    width: 300px;
+    height: 300px;
+    margin: 1rem 0 0;
+    padding: 1rem;
+  }
+  .store-item img{
+     cursor:pointer;
+    width: 100%;
+    display: block;
+    box-shadow: 7px 7px 20px rgba(0,0,0,0.2);
+  }
+  .alumni-page {
+    display: none;
+    padding: 20px;
+}
+
+.back-button {
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    border: none;
+    background-color: #252323;
+    color: white;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #bbb;
+}
+.new{
+  background:linear-gradient(45deg, rgb(206, 176, 206), rgb(155, 247, 155));
+  padding: 15px 9%;
+  padding-bottom: 100px;
+  margin-top: 30px;
+}
+
+.new .new-box .alumni-card{
+  box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  border-radius: 5px;
+  background: white;
+  text-align: center;
+  padding:20px 10px;
+  margin-top: 50px;
+  
+}
+
+
+.alumni-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    
+}
+
+.alumni-card {
+    flex: 25%;
+    max-width: 25%;
+    padding: 10px;
+    gap: 20px;
+    padding-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.new .new-box .alumni-card .content {
+    background-color: white;
+    display: grid;
+    align-items: center;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+.alumni-card .content img{
+  margin-left: auto;
+  margin-right: auto;
+  height: 120px ;
+  width: 120px ;
+  background: none;
+  border-radius: 50%;
+}
+.alumni-card .content a{
+  text-decoration: none;
+  color: rgb(23, 22, 22);
+  font-weight: bolder;
+  margin-top: 20px;
+}
+
+
+.alumni-card .content:hover {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 800px) {
+    .alumni-card {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .alumni-card {
+        flex: 100%;
+        max-width: 100%;
+    }
+}
